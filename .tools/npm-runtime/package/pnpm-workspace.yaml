@@ -1,0 +1,6 @@
+packages:
+  - docs
+  - smoke-tests
+  - mock-globals
+  - mock-registry
+  - workspaces/*

@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/employment_db
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: "1111"
+    hikari:
+      connection-init-sql: SET time_zone = '+00:00'
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
+
+server:
+  error:
+    include-message: never
+
+app:
+  jwt-secret: ${JWT_SECRET}
+  secure-cookie: false
+  seed-password: ${DEV_SEED_PASSWORD:}
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: jdbc:h2:file:./data/employment;MODE=MySQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+    hikari:
+      connection-init-sql: SET TIME ZONE 'UTC'
+
+app:
+  jwt-secret: ${JWT_SECRET:local-development-only-secret-change-before-deploy-2026}
+  secure-cookie: false

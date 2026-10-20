@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "JobBridge: Backend (MariaDB)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\start-backend.ps1"
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "JobBridge: Frontend",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\start-frontend.ps1"
+      ],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "JobBridge: Start All",
+      "dependsOn": ["JobBridge: Backend (MariaDB)", "JobBridge: Frontend"],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    }
+  ]
+}

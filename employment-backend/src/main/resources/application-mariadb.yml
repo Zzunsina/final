@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/employment_db
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: "1111"
+    hikari:
+      connection-init-sql: SET time_zone = '+00:00'
+
+app:
+  jwt-secret: ${JWT_SECRET}
+  secure-cookie: false

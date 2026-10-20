@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot-buildpack-platform",
+    "version": "3.5.16",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "spring-boot-buildpack-platform-3.5.16.jar",
+          "url": "spring-boot-buildpack-platform-3.5.16.jar",
+          "size": 325198,
+          "sha512": "735e9b1e9caea0c5db6bf156ae5fd587d382e5a741859be9c909ea09136748bc7aefb521ceff688484f1f4ecb85ad5c08dde2779dbd97d02c0e7d127767e5df7",
+          "sha256": "2c0c11fb0e6fc365dfb1a26403f3550119c9e5156b291ab76cc9cd4eb482580f",
+          "sha1": "aa70a85b061f0626885983e153086863c94ccd1b",
+          "md5": "2b307df5e0a039602cc19cab11cd64c8"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.21.4"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.module",
+          "module": "jackson-module-parameter-names",
+          "version": {
+            "requires": "2.21.4"
+          }
+        },
+        {
+          "group": "net.java.dev.jna",
+          "module": "jna-platform",
+          "version": {
+            "requires": "5.17.0"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-compress",
+          "version": {
+            "requires": "1.27.1"
+          }
+        },
+        {
+          "group": "org.apache.httpcomponents.client5",
+          "module": "httpclient5",
+          "version": {
+            "requires": "5.5.2"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.19"
+          }
+        },
+        {
+          "group": "org.tomlj",
+          "module": "tomlj",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-buildpack-platform-3.5.16.jar",
+          "url": "spring-boot-buildpack-platform-3.5.16.jar",
+          "size": 325198,
+          "sha512": "735e9b1e9caea0c5db6bf156ae5fd587d382e5a741859be9c909ea09136748bc7aefb521ceff688484f1f4ecb85ad5c08dde2779dbd97d02c0e7d127767e5df7",
+          "sha256": "2c0c11fb0e6fc365dfb1a26403f3550119c9e5156b291ab76cc9cd4eb482580f",
+          "sha1": "aa70a85b061f0626885983e153086863c94ccd1b",
+          "md5": "2b307df5e0a039602cc19cab11cd64c8"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-buildpack-platform-3.5.16-javadoc.jar",
+          "url": "spring-boot-buildpack-platform-3.5.16-javadoc.jar",
+          "size": 453544,
+          "sha512": "b6817dddaea78881915603ec5001e85e102c2fb054558671a97764b26a4916196afcb75972a47508d9446269ca3ce99cc7f329dcffa006072a694c37a47aaf76",
+          "sha256": "dfc02df8213eb20969f4452ee0a80ac669d79261252acb8151d0acb52e05c396",
+          "sha1": "900919f02864d876ab5840331e16e77e9218f29d",
+          "md5": "5f33c94797034c0847571ca151c1c909"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-buildpack-platform-3.5.16-sources.jar",
+          "url": "spring-boot-buildpack-platform-3.5.16-sources.jar",
+          "size": 193577,
+          "sha512": "00c715346e7143d1289eb7d289e7ce5e87d94957b82a4de5522ed3764ebdebfebea2d44c37aef5ed10d31f4e9c474ecb79626c35ca553775c32dae6d8ff62caa",
+          "sha256": "0f6b2672cb7f865a8a77473b2a978c37eee12e738798d5d9e17e69b013627b66",
+          "sha1": "27c899b303817677d46d155a7e8d4a8b3a4f67df",
+          "md5": "ac83eda1c7ed34ff9620fe2b0b384e79"
+        }
+      ]
+    }
+  ]
+}
